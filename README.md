@@ -28,14 +28,11 @@ git clone https://github.com/RanaPriyansh/dsh-plugin-eval-gate.git
 cd dsh-plugin-eval-gate
 npm install
 
-# Build TypeScript
-npm run build
-
 # Run tests (16 tests, all offline)
 npm test
 
 # Run demo
-node demo.js
+npm run demo
 ```
 
 ## Usage
