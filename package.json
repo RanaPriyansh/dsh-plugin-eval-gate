@@ -1,0 +1,37 @@
+{
+  "name": "dsh-plugin-eval-gate",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin that evaluates drafts with deterministic gates and returns PASS or HOLD",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/*.test.js",
+    "demo": "node demo.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "cordis",
+    "plugin",
+    "eval",
+    "gate"
+  ],
+  "author": "Priyansh Rana",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RanaPriyansh/dsh-plugin-eval-gate.git"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

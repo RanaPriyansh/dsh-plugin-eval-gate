@@ -1,0 +1,38 @@
+name: eval-gate
+version: 1.0.0
+description: DeepSeek Harness plugin that evaluates drafts with deterministic gates and returns PASS or HOLD
+author: Priyansh Rana
+license: MIT
+
+main: dist/index.js
+
+config:
+  enableLLMJudge:
+    type: boolean
+    default: false
+    description: Enable LLM-as-judge evaluation (default OFF)
+  allowInferredEmails:
+    type: boolean
+    default: false
+    description: Allow inferred email addresses
+  allowPriceStock:
+    type: boolean
+    default: false
+    description: Allow price/stock mentions
+  allowTrackingPixels:
+    type: boolean
+    default: false
+    description: Allow tracking pixels in HTML
+  allowFirstTouchLinks:
+    type: boolean
+    default: false
+    description: Allow first-touch/onboarding links
+
+provides:
+  - evalGate
+
+keywords:
+  - evaluation
+  - gate
+  - draft
+  - validation
